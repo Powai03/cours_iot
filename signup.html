@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body1">
+    <form>
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+        <label for="pseudo">Pseudo</label>
+        <input type="text" name="pseudo" required>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" required>
+        <label for="maison">Maison</label>
+        <select name="maison" id="maison">
+            <option value="gryffondor">Gryffondor</option>
+            <option value="serdaigle">Serdaigle</option>
+            <option value="poufsouffle">Poufsouffle</option>
+            <option value="serpentard">Serpentard</option>
+        </select>
+        <button type="button" onclick="signUp()" > S'inscrire</button>
+    </form>
+</div>
+</body>
+<script src="./js/signup.js"></script>
+</html>

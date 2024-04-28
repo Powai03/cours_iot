@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var access_token = 'x access token';
+    </script>
+</head>
+
+<body>
+    <div class="body6">
+        <div class="header">
+            <a href="home.html"><div class="logo"><img src="./pic/logo.png" alt="logo hp"></div></a>
+            <a href="open.html">Ouvrir</a>
+            <a href="collection.html">Collection</a>
+            <a href="exchange.html">Échanger</a>
+            <a href="profil.html">Profil</a>
+            <a href="login.html" class="logout">Se déconnecter</a>
+        </div>
+        <div class="headerphone">
+            <a href="home.html"><div class="logo"><img src="./pic/logo.png" alt="logo hp"></div></a>
+            <div class="menu">
+                <a href="open.html">Ouvrir</a>
+                <a href="collection.html">Collection</a>
+                <a href="exchange.html">Échanger</a>
+                <a href="profil.html">Profil</a>
+            </div>
+            <div class="burger">
+                <div>Menu</div>
+            </div>
+        </div>
+        <div class="empty2"></div>
+        <div class="profil">
+            <div class="maison">
+                <div class="contenu">
+                    <div class="gryf actif"><img src="./pic/gryf.png" alt=""></div>
+                    <div class="serp"><img src="./pic/serp.png" alt=""></div>
+                    <div class="pouf"><img src="./pic/pouf.png" alt=""></div>
+                    <div class="serd"><img src="./pic/serd.png" alt=""></div>
+                </div>
+                <p>Choisir sa maison:</p>
+                <div class="tabs">
+                    <li>Gryffondor</li>
+                    <li>Serpentard</li>
+                    <li>Poufsouffle</li>
+                    <li>Serdaigle</li>
+                </div>
+            </div>
+            <div class="infos" id="infos"></div>
+            <div class="infos">
+                
+                <p>Nombre de boosters ouverts : N/A</p>
+                <p>Nombre de cartes possédées : N/A</p>
+                <p>Nombre d'échanges effectués: N/A</p>
+                <p>Carte préférée :</p>
+                <select name="cartepref" id="cartepref">
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/menuburger.js"></script>
+<script src="./js/tabs.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/getuser.js"></script>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="home.html">
+            <div class="logo"><img src="./pic/logo.png" alt="logo hp"></div>
+        </a>
+        <a href="open.html">Ouvrir</a>
+        <a href="collection.html">Collection</a>
+        <a href="exchange.html">Échanger</a>
+        <a href="profil.html">Profil</a>
+        <a href="login.html" class="logout">Se déconnecter</a>
+    </div>
+    <div class="headerphone">
+        <a href="home.html">
+            <div class="logo"><img src="./pic/logo.png" alt="logo hp"></div>
+        </a>
+        <div class="menu">
+            <a href="open.html">Ouvrir</a>
+            <a href="collection.html">Collection</a>
+            <a href="exchange.html">Échanger</a>
+            <a href="profil.html">Profil</a>
+        </div>
+        <div class="burger">
+            <div>Menu</div>
+        </div>
+    </div>
+    <div class="body4">
+        <div class="empty2"></div>
+        <p>Demande(s) d'échange(s) reçu(s):</p>
+        <div class="demande">
+            <div class="ask"><!--on se servira de cette div pour générer les demandes via js-->
+                <p>IIM veut échanger sa carte "Harry Potter" contre votre carte "Hermione Granger".</p>
+                <button id="accept">Accepter l'échange</button>
+                <button id="refuse">Refuser l'échange</button>
+                <p>Xx_DarkPotterDu92_xX veut échanger sa carte "Ron Weasley" contre votre carte "Harry Potter shiny".
+                </p>
+                <button id="accept">Accepter l'échange</button>
+                <button id="refuse">Refuser l'échange</button>
+            </div>
+        </div>
+        <p>Envoyer une demande d'échange:</p>
+        <div class="echange">
+            <div class="echange1">
+                <p>Choisissez une carte à échanger:</p>
+                <select>
+                </select>
+            </div>
+            <div class="echange2">
+                <p>Trouvez un autre joueur avec qui échanger des cartes:</p>
+                <input type="search" placeholder="Rechercher un joueur">
+                <button>Valider</button>
+                <p>Choisissez la carte que vous souhaitez:</p>
+                <select>
+                    <option value="">Harry Potter</option>
+                    <option value="">Ron Weasley</option>
+                    <option value="">Ginny Weasley</option>
+                    <option value="">Hermione Granger</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" onclick="validate()">Envoyer la demande d'échange</button>
+    </div>
+
+</body>
+<script src="./js/menuburger.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    validate = () => {
+        alert("Votre demande d'échange a été envoyée au joueur concerné.");
+    }
+</script>
+
+</html>
